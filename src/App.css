@@ -1,3 +1,14 @@
+.signIn {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}
+
+.loading {
+    color: gray;
+    font-family: "Courier New", Courier, monospace;
+}
+
 img {
     border-radius: 50%;
     height: 45px;
@@ -78,6 +89,17 @@ p {
 }
 
 @media (max-width: 500px) {
+    .signIn {
+        text-align: center !important;
+    }
+    h1 {
+        font-size: 4rem !important;
+    }
+
+    h5 {
+        font-size: 1.2rem !important;
+    }
+
     p {
         font-size: 15px;
     }

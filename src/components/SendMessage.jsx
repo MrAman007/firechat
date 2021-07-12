@@ -3,6 +3,8 @@ import { db, auth } from "../firebase";
 import { Input, Button } from "@material-ui/core";
 import firebase from "firebase";
 
+import uuid from "react-uuid";
+
 function SendMessage({ scroll }) {
     const [message, setMessage] = useState("");
 
@@ -11,6 +13,7 @@ function SendMessage({ scroll }) {
         const { uid, photoURL } = auth.currentUser;
 
         await db.collection("messages").add({
+            id: uuid(),
             text: message,
             photoURL,
             uid,
