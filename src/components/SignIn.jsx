@@ -32,7 +32,7 @@ function SignIn() {
                 </h3>
             ) : (
                 <>
-                    <Typography variant="h1" guttterBottom>
+                    <Typography variant="h1">
                         Firechat
                     </Typography>
                     <Typography variant="h5" gutterBottom>
