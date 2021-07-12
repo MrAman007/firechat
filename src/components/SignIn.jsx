@@ -32,9 +32,7 @@ function SignIn() {
                 </h3>
             ) : (
                 <>
-                    <Typography variant="h1">
-                        Firechat
-                    </Typography>
+                    <Typography variant="h1">Firechat</Typography>
                     <Typography variant="h5" gutterBottom>
                         A free public chat app for gmail users. Be polite!
                     </Typography>
@@ -48,7 +46,7 @@ function SignIn() {
                         size="large"
                         onClick={signInWithGoogle}
                     >
-                        Sign In With Google
+                        Sign in With Google
                     </Button>
                 </>
             )}
